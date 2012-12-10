@@ -1,6 +1,6 @@
 PHP-GetOpts
 ===========
-This function is intended as a complete replacement for the horribly crippled [getopt() native PHP function](http://au1.php.net/manual/en/function.getopt.php) and provide extended functionality.
+This function is intended as a complete replacement for the horribly crippled [getopt()](http://au1.php.net/manual/en/function.getopt.php)  native PHP function and provide extended functionality.
 The use of this library means lots of great command-line-fu becomes readily available without any unnecessary validation tediousness messing up the first half of your script.
 To use simply add the (ahem) hash-bang to the top of your PHP script and make the script executable.
 
@@ -27,6 +27,7 @@ Which means the above can now be run as:
 	./PROGRAM.php -ab -c 15 -d key=val -e 1 --letterb -d key2=val2 -eeeeeee 2 3
 
 Gives the $opt variable the following structure:
+
 	$opt = Array (
 		[cmdline] => Array (
 			[0] => 1
